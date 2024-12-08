@@ -9,13 +9,15 @@ import WeatherApp from "./ProjectImg/Weather-App.jpg";
 import Metaversus from "./ProjectImg/Metaversus.jpg";
 import Cryptoversus from "./ProjectImg/Cryptoversus.jpg";
 import FillerImg from "./ProjectImg/img6.jpg";
-
+import Soundify from "./ProjectImg/Soundify.jpg";
+import Flair from "./ProjectImg/Flair.jpg";
 import ProfilePic from "./Details/Profile-pic.jpg";
 import PDF from "./Details/YewKhengKok_CV.pdf";
-
+import Typescript from "./Logo/typescript-logo.png";
 import AndroidStudio from "./Logo/androidstudio-logo.png";
 import Bootstrap from "./Logo/bootstrap-logo.png";
 import C from "./Logo/c-logo.png";
+import Nextjs from "./Logo/nextjs-logo.png";
 import Cpp from "./Logo/cpp-logo.png";
 import CSS from "./Logo/css-logo.png";
 import Figma from "./Logo/figma-logo.png";
@@ -42,13 +44,17 @@ export {
 	BankLandingPage,
 	WeatherApp,
 	Metaversus,
+	Flair,
+	Soundify,
 	Cryptoversus,
 	FillerImg,
+	Nextjs,
 	Mouse,
 	ProfilePic,
 	PDF,
 	AndroidStudio,
 	Bootstrap,
+	Typescript,
 	C,
 	Cpp,
 	CSS,
