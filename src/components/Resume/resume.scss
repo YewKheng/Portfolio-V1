@@ -1,0 +1,100 @@
+.resume {
+	.resume-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 30px;
+
+		.react-pdf__Page__canvas {
+			width: 100% !important;
+			height: 100% !important;
+			margin: 0 auto;
+		}
+	}
+
+	.button-block {
+		display: flex;
+		justify-content: center;
+		padding: 30px 0;
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 175px;
+			background: linear-gradient(to bottom, #4fcbdf 0%, cyan 100%);
+			color: black;
+			font-size: 20px;
+			font-weight: 500;
+			border: 1px solid cyan;
+			border-radius: 25px;
+			padding: 12px 0;
+			transition: all 0.3s;
+
+			.text {
+				color: black;
+				font-size: 16px;
+				font-weight: 600;
+			}
+
+			.svg-wrapper {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-right: 10px;
+
+				svg {
+					fill: black;
+					width: 12px;
+				}
+
+				.bar-icon {
+					width: 16px;
+					height: 5px;
+					border-bottom: 3px solid black;
+					border-left: 3px solid black;
+					border-right: 3px solid black;
+				}
+			}
+		}
+
+		button:hover {
+			background: transparent;
+			border: 1px solid cyan;
+			transition-duration: 0.3s;
+		}
+
+		button:hover .text {
+			color: cyan;
+		}
+
+		button:hover svg {
+			fill: cyan;
+			animation: slide-down 1s linear infinite;
+		}
+
+		button:hover .bar-icon {
+			border-color: cyan;
+		}
+	}
+}
+
+@keyframes slide-down {
+	0% {
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.resume {
+		padding-bottom: 0;
+	}
+}

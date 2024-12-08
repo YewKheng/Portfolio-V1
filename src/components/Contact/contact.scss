@@ -1,0 +1,168 @@
+.contact {
+	.form-block {
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 40px;
+		gap: 24px;
+
+		input,
+		textarea {
+			background-color: transparent;
+			border-radius: 20px;
+			border: 1px solid rgb(95, 95, 95);
+			color: lightgrey;
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+			padding: 0 25px;
+		}
+
+		#floatingTextArea {
+			height: 200px;
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: 400;
+			padding: 16px 25px;
+		}
+
+		label::after {
+			background-color: transparent !important;
+		}
+
+		.form-control:not(:focus) + label {
+			color: lightgrey;
+			opacity: 0.5;
+		}
+
+		.form-control:focus + label {
+			color: cyan;
+			opacity: 1;
+		}
+
+		.form-control:hover + label {
+			color: cyan;
+			opacity: 1;
+		}
+
+		.form-control:focus {
+			border-color: cyan;
+		}
+	}
+
+	.button-block {
+		display: flex;
+		justify-content: center;
+
+		button {
+			display: flex;
+			width: 150px;
+			align-items: center;
+			justify-content: center;
+			background: linear-gradient(to bottom, #4fcbdf 0%, cyan 100%);
+			color: black;
+			font-size: 20px;
+			font-weight: 500;
+			border: 0;
+			border-radius: 25px;
+			padding: 12px 0;
+			transition: all 0.3s;
+
+			.svg-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: rgba(53, 53, 53, 0.2);
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				margin-right: 12px;
+				transition: all 0.3s;
+
+				svg {
+					width: 18px;
+					transition: all 0.3s;
+				}
+			}
+		}
+
+		button:hover {
+			transform: translateY(-3px);
+		}
+
+		button:hover .svg-wrapper {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+
+		button:hover .svg-wrapper {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+
+		button:hover svg {
+			transform: rotate(45deg);
+		}
+
+		button:active {
+			transform: scale(0.9);
+		}
+	}
+
+	.info-block {
+		position: relative;
+		font-size: 18px;
+		text-align: center;
+		border-radius: 5px;
+		padding: 50px 40px 0;
+		z-index: 1;
+		cursor: default;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			.icon {
+				display: inline-block;
+				vertical-align: top;
+				width: 30%;
+
+				.bx {
+					display: block;
+					font-size: 40px;
+					margin: 0 0 15px;
+					color: cyan;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.contact {
+		[class*="col-"] {
+			padding-bottom: 25px;
+		}
+
+		input,
+		textarea {
+			font-size: 16px;
+		}
+	}
+
+	.info-block {
+		padding: 30px 0 0 !important;
+		font-size: 16px !important;
+
+		li {
+			display: block;
+			width: 100% !important;
+			padding: 0 0 15px;
+		}
+
+		.bx {
+			font-size: 35px !important;
+			margin: 0;
+		}
+	}
+}

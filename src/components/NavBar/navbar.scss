@@ -1,0 +1,114 @@
+.navbar {
+	padding: 15px 0;
+	position: fixed !important;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+	background: #00040f;
+	box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+	transition: 0.5s linear;
+
+	.logo-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: inherit;
+
+		h3 {
+			color: cyan;
+			font-weight: bold;
+			letter-spacing: 5px;
+			margin: 0;
+			cursor: pointer;
+		}
+	}
+
+	.navbar-collapse {
+		flex-grow: 0;
+		gap: 20px;
+
+		.navbar-nav {
+			.nav-link {
+				color: lightgrey;
+				height: 40px;
+				position: relative;
+
+				p {
+					font-size: 18px;
+					line-height: 20px;
+					cursor: pointer;
+				}
+			}
+
+			.nav-link:hover,
+			.nav-link.active {
+				background: none;
+				color: cyan;
+			}
+
+			.nav-link:hover:before,
+			.nav-link.active:before {
+				right: 8px;
+				left: 7px;
+				opacity: 1;
+			}
+
+			.nav-link:before {
+				content: "";
+				background: cyan;
+				height: 1px;
+				position: absolute;
+				bottom: 8px;
+				left: -20px;
+				right: 100%;
+				transition: 0.3s linear;
+				opacity: 0;
+			}
+		}
+
+		.social-block {
+			display: flex;
+			gap: 10px;
+
+			.icon {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 45px;
+				height: 45px;
+				background-color: transparent;
+				border: 2px solid cyan;
+				border-radius: 50%;
+				font-size: 25px;
+				color: cyan;
+			}
+		}
+
+		.icon:hover {
+			background-color: cyan;
+			color: black;
+			box-shadow: 0 0 10px cyan;
+		}
+	}
+
+	.navbar-toggler {
+		border: solid 2px cyan;
+
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		}
+	}
+
+	.navbar-toggler:hover {
+		box-shadow: 0 0 10px 5px cyan;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.navbar {
+		.logo-block {
+			padding-left: 80px;
+		}
+	}
+}

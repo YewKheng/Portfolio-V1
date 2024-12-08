@@ -1,0 +1,72 @@
+.about {
+	.text-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-bottom: 20px;
+
+		img {
+			width: 200px;
+			height: 200px;
+			border-radius: 100%;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: normal;
+			margin-top: 20px;
+		}
+	}
+
+	.skills-block {
+		width: 80%;
+		background-color: transparent;
+		border-radius: 50px;
+		padding: 20px;
+		margin: 0 auto;
+		text-align: center;
+
+		p {
+			font-size: 18px;
+			line-height: normal;
+		}
+
+		img {
+			margin: 0 auto 10px auto;
+		}
+	}
+}
+
+@media (hover: none) or (max-width: 768px) {
+	.about {
+		.react-multiple-carousel__arrow {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.about {
+		.text-block p {
+			font-size: 18px !important;
+		}
+
+		.skills-block p {
+			font-size: 16px !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.about {
+		.text-block p {
+			font-size: 16px !important;
+		}
+
+		.skills-block p {
+			font-size: 15px !important;
+		}
+	}
+}
